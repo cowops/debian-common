@@ -11,7 +11,7 @@ This role requires a debian compliant system such as knoppix or ubuntu.
 Role Variables
 --------------
 
-None
+debian_version: Debian release name such as wheezy, jessie, etc...
 
 Dependencies
 ------------
@@ -23,7 +23,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-common }
+         - { role: loranger.debian-common, debian: wheezy }
 
 Tasks
 -----
