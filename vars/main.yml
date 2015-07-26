@@ -1,2 +1,4 @@
 debian:
     version: wheezy
+    locale: fr_FR.UTF-8
+    mirror: ftp.fr.debian.org
