@@ -15,4 +15,4 @@ galaxy_info:
     - wheezy
   galaxy_tags:
   - system
-  dependencies: []
+dependencies: []
