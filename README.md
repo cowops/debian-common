@@ -24,7 +24,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-common, debian.version: wheezy }
+         - { role: cowops.debian-common, debian.version: wheezy }
 
 Tasks
 -----
