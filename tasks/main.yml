@@ -1,6 +1,7 @@
 ---
 - name: set hostname
   shell: "hostnamectl set-hostname {{ inventory_hostname }}"
+  ignore_errors: yes
   # hostname: name={{ inventory_hostname }}
 
 - name: use debian mirror
