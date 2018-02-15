@@ -29,7 +29,6 @@ Example Playbook
 Tasks
 -----
 
-  - Register [dotdeb](http://www.dotdeb.org/) gpg key
   - User [french debian mirrors](ftp://ftp.fr.debian.org/)
   - Update and upgrade system
   - Install [vim](http://www.vim.org/)
