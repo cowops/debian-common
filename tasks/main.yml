@@ -20,6 +20,8 @@
     - wget
     - ack-grep
     - python-pycurl
+    - apt-transport-https
+    - aptitude
 
 - name: use locales
   locale_gen: name={{ debian.locale }} state=present
