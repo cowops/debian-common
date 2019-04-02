@@ -2,3 +2,4 @@ debian:
     version: wheezy
     locale: fr_FR.UTF-8
     mirror: ftp.fr.debian.org
+    sources_list: "sources.list.j2"

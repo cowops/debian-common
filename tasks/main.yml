@@ -5,7 +5,7 @@
   # hostname: name={{ inventory_hostname }}
 
 - name: use debian mirror
-  template: src=sources.list.j2 dest=/etc/apt/sources.list
+  template: src={{ debian.sources_list }} dest=/etc/apt/sources.list
 
 - name: upgrade the distro
   apt: update_cache=yes upgrade=yes
