@@ -8,20 +8,25 @@
   template: src={{ debian.sources_list }} dest=/etc/apt/sources.list
 
 - name: upgrade the distro
-  apt: update_cache=yes upgrade=yes
+  apt:
+    update_cache: yes
+    upgrade: yes
 
 - name: install common packages
-  apt: pkg={{ item }} state=latest
-  with_items:
-    - vim
-    - curl
-    - gnupg
-    - rsync
-    - wget
-    - ack-grep
-    - python-pycurl
-    - apt-transport-https
-    - aptitude
+  apt:
+    name: {{ packages }}
+    state: latest
+  vars:
+    packages:
+      - vim
+      - curl
+      - gnupg
+      - rsync
+      - wget
+      - ack-grep
+      - python-pycurl
+      - apt-transport-https
+      - aptitude
 
 - name: use locales
   locale_gen: name={{ debian.locale }} state=present
