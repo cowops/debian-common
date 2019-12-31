@@ -24,8 +24,7 @@
       - rsync
       - wget
       - ack-grep
-      - python-pycurl
-      - apt-transport-https
+      - python3-pycurl
       - aptitude
 
 - name: use locales
