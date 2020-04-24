@@ -10,7 +10,7 @@
 - name: upgrade the distro
   apt:
     update_cache: yes
-    upgrade: yes
+    upgrade: 'yes'
 
 - name: install common packages
   apt:
