@@ -6,6 +6,7 @@
 
 - name: use debian mirror
   template: src={{ debian.sources_list }} dest=/etc/apt/sources.list
+  when: debian.sources_list
 
 - name: upgrade the distro
   apt:
