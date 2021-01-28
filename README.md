@@ -38,6 +38,7 @@ Tasks
   - Install [rsync](http://rsync.samba.org/)
   - Install [wget](https://www.gnu.org/software/wget/)
   - Install [ack-grep](http://beyondgrep.com/)
+  - Install [acl](https://savannah.nongnu.org/projects/acl/)
 
 License
 -------
