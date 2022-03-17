@@ -30,4 +30,6 @@
       - aptitude
 
 - name: use locales
-  locale_gen: name={{ debian.locale }} state=present
+  locale_gen:
+    name: "{{ debian.locale }}"
+    state: present
